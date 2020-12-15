@@ -4,7 +4,7 @@ import SizeSelector from "../UI/SizeSelector";
 export default function ProductDetails(props) {
 	return (
 		<div className='flex flex-col py-20 px-10'>
-			<div className='text-xs font-bold'>product type</div>
+			<div className='text-xs font-bold'>Blouse</div>
 			<div className='uppercase font-extrabold text-xl'>
 				product brand
 			</div>
@@ -23,6 +23,15 @@ export default function ProductDetails(props) {
 				size guide
 			</div>
 			<SizeSelector />
+			<div className='text-xl font-extrabold uppercase'>$100</div>
+			<div className='w-1/2 flex pt-2'>
+				<button className='bg-black text-white p-3 uppercase text-xs'>
+					Add to cart
+				</button>
+				<button className='bg-white mt-1 py-2 px-3 rounded-tr rounded-br'>
+					<FontAwesomeIcon icon={["far", "heart"]} />
+				</button>
+			</div>
 		</div>
 	);
 }

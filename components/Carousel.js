@@ -1,32 +1,12 @@
-import CarouselIndex from "../UI/CarouselIndex";
 import ProductDetails from "./ProductDetails";
 import ProductDisplay from "./ProductDisplay";
 
-let start = 1;
-const items = [
-	{
-		name: "shirt",
-	},
-	{
-		name: "trouser",
-	},
-	{
-		name: "sock",
-	},
-	{
-		name: "shoe",
-	},
-];
-
 const carousel = () => (
-	<div className='grid grid-cols-7 gap-4 p-1'>
-		<div className='col-span-1'>
-			{/* <CarouselIndex start={start} items={items} /> */}
-		</div>
-		<div className='col-span-4'>
+	<div className='grid grid-cols-1 md:grid-cols-6 gap-4 px-20'>
+		<div className='col-span-1 md:col-span-4'>
 			<ProductDisplay />
 		</div>
-		<div className='col-span-2'>
+		<div className='col-span-1 md:col-span-2'>
 			<ProductDetails />
 		</div>
 	</div>
