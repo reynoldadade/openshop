@@ -1,0 +1,10 @@
+.currentImage {
+	height: 600px;
+}
+.nextImage {
+	height: 550px;
+}
+
+.nextImageContainer {
+	padding-top: 50px;
+}
