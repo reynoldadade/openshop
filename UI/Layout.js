@@ -1,7 +1,9 @@
 import Head from "next/head";
+import { config, dom } from "@fortawesome/fontawesome-svg-core";
 import Navigation from "./Navigation";
 export const siteTitle = "Open Shop";
 
+config.autoAddCss = false;
 export default function Layout({ children, home }) {
 	return (
 		<div>
@@ -19,6 +21,7 @@ export default function Layout({ children, home }) {
 				/>
 				<meta name='og:title' content={siteTitle} />
 				<meta name='twitter:card' content='summary_large_image' />
+				<style>{dom.css}</style>
 			</Head>
 			<Navigation />
 			<main>{children}</main>

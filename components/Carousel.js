@@ -1,4 +1,5 @@
 import CarouselIndex from "../UI/CarouselIndex";
+import ProductDetails from "./ProductDetails";
 import ProductDisplay from "./ProductDisplay";
 
 let start = 1;
@@ -25,7 +26,9 @@ const carousel = () => (
 		<div className='col-span-4'>
 			<ProductDisplay />
 		</div>
-		<div className='col-span-2'>details</div>
+		<div className='col-span-2'>
+			<ProductDetails />
+		</div>
 	</div>
 );
 
